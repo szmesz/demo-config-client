@@ -13,7 +13,7 @@ public class ClientConfig {
     private String message;
 
     @Value("${my.list.values}")
-    private List<String> values;
+    private List<Integer> values;
 
     @Value("${something.else}")
     private String otherMessage;
@@ -22,7 +22,7 @@ public class ClientConfig {
         return message;
     }
 
-    public List<String> getValues() {
+    public List<Integer> getValues() {
         return values;
     }
 

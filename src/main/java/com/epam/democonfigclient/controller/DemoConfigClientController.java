@@ -16,7 +16,7 @@ public class DemoConfigClientController {
     private String message;
 
     @Value("${my.list.values}")
-    private List<String> values;
+    private List<Integer> values;
 
     @Value("${something.else}")
     private String other;
@@ -27,7 +27,7 @@ public class DemoConfigClientController {
     }
 
     @GetMapping("/values")
-    public ResponseEntity<List<String>> getValuesProperty() {
+    public ResponseEntity<List<Integer>> getValuesProperty() {
         return ResponseEntity.ok(values);
     }
 
