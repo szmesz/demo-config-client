@@ -1,0 +1,7 @@
+spring:
+  application:
+    name: config-dev
+  cloud:
+    config:
+      git:
+        uri: http://localhost:8888/config-dev/dev
